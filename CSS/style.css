@@ -1,0 +1,642 @@
+/*For desktop view*/
+ @media screen and (min-device-width: 1024px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg.jpg');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 9px;
+        right: 200px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 70px;
+        right: 160px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }    
+ }
+
+ /*For tablet view*/
+ @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 65vmin;
+        height: 67vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 19px;
+        right: 350px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 80px;
+        right: 310px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }    
+ }
+
+/*For mobile view*/
+@media screen and (min-device-width: 300px) and (max-device-width: 360px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 39px;
+        right: 135px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 90px;
+        right: 95px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 400px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 39px;
+        right: 155px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 90px;
+        right: 115px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 440px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 39px;
+        right: 155px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 90px;
+        right: 115px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 440px) and (max-device-width: 525px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 90vmin;
+        height: 92vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 29px;
+        right: 185px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 80px;
+        right: 145px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 525px) and (max-device-width: 595px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 80vmin;
+        height: 82vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 9px;
+        right: 220px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 70px;
+        right: 180px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 595px) and (max-device-width: 650px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 70vmin;
+        height: 72vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 19px;
+        right: 250px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 80px;
+        right: 210px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 650px) and (max-device-width: 700px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 65vmin;
+        height: 67vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 19px;
+        right: 295px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 80px;
+        right: 255px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
+
+@media screen and (min-device-width: 700px) and (max-device-width: 768px) {
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: url('../bg-rest.png');
+        min-height: 100vh;
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #board {
+        background: linear-gradient(rgb(174, 236, 174), rgb(243, 243, 188));
+        width: 65vmin;
+        height: 67vmin;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+    }
+    
+    #scoreCard {
+        position: absolute;
+        top: 19px;
+        right: 325px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    #highScoreCard {
+        position: absolute;
+        top: 80px;
+        right: 285px;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .head {
+        background: linear-gradient(red, yellow);
+        border: 1px solid darkmagenta;
+        border-radius: 10px;
+        transform: scale(1.03);
+    }
+    
+    .snake {
+        background-color: purple;
+        border: .25vmin white;
+        border-radius: 12px;
+    }
+    
+    .food {
+        background: linear-gradient(yellow, green);
+        border: .25vmin black;
+        border-radius: 8px;
+    }   
+}
